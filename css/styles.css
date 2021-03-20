@@ -1,0 +1,235 @@
+  :root {
+    --primery-text-color: #757575;
+    --title-text-color: #212121;
+    --button-text-color: #212121;
+    --button-text-color-hover-focus: #ffffff;
+    --button-background-color: #f5f4fa;
+    --link-text-contacts: #757575;
+    --link-text-site-nav: #212121;
+    --accent-text-color: #2196f3;
+     
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    color: var(--primery-text-color);
+    background-color: #ffffff;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  /*Logo*/
+  
+  .logo {
+   font-family: Raleway;
+   font-size: 26px;
+   line-height: 1.2;
+   letter-spacing: 0.03em;
+   color: #212121;
+   text-decoration: none;
+  }
+  
+  .logo-part {
+    color: #2196f3;
+  }
+  
+  .logo-footer {
+    color: #ffffff;
+  }
+  
+  .portfolio:active {
+    color: #000000;
+  }
+
+  /* Header and Footer contact links */
+  
+  .footer {
+    background-color: #2f303a;
+  }
+  
+  .link {
+    color: #212121;
+    text-decoration: none;
+  }
+  
+  .contact-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  
+  .footer-contact {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+  
+  .link:hover,
+  .link:focus {
+    color: var(--accent-text-color);
+  }
+  
+  .address {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .address.link:hover,
+  .address.link:focus {
+    color: var(--accent-text-color);
+  }
+  
+  .address .street .link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  
+  .address .street {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .address.link {
+    color: var(--link-text-contacts);
+    text-decoration: none;
+  }
+  
+    
+  /* Навигация */
+  
+  .site-nav.link {
+    color: var(--link-text-site-nav);
+  }
+  
+  .site-nav .link:hover {
+    color: var(--accent-text-color);
+  }
+  
+  .site-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  
+  .site-nav .link-page {
+    color: var(--link-text-site-nav);
+  }
+  
+  .site-nav .link-page:hover,
+  .site-nav .link-page:focus {
+    color: var(--accent-text-color);
+  }
+
+  .site-nav .link-page.current {
+    color: var(--accent-text-color);
+  }
+
+  /* Герой */
+  
+  .hero {
+    background-color: #2f303a;
+  }
+  
+  .hero .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  .button {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: var(--button-text-color);
+    background-color: #F5F4FA;
+  }
+
+  /* Section */
+  
+  .section .section-title-services {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  
+    
+  .section .section-title-profit {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+  }
+  
+  .section .benefits-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  
+  /* Team */
+  
+   .team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+  }
+  
+   .team-title {
+    font-size: 16px;
+    line-height: 1.18;    
+    letter-spacing: 0.03em;
+  }
+  
+  /* Buttons */
+  .button:hover,
+  .button:focus {
+    color: var(--button-text-color-hover-focus);
+    background-color: var(--accent-text-color);
+    cursor: pointer;
+  }
+  
+  
+  /* Service */
+  
+  .section .service-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+  
+  .section .service-text {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+  }
+    
+
+  .visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+  
