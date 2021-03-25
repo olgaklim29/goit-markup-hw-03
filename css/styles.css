@@ -1,6 +1,7 @@
   :root {
     --primery-text-color: #757575;
     --title-text-color: #212121;
+    --background-color: #2f303a;
     --button-text-color: #212121;
     --button-text-color-hover-focus: #ffffff;
     --button-background-color: #f5f4fa;
@@ -128,6 +129,11 @@
     padding-bottom: 15px;
   }
    
+  .logo-footer .link{
+    color: #ffffff;
+  }
+
+
   .portfolio:active {
     color: #000000;
   }
@@ -144,7 +150,9 @@
     text-decoration: none;
   } 
 
-  
+  .address .street.link {  
+    color: #ffffff;
+}
   
   .contact-nav {
     font-weight: 500;
@@ -184,18 +192,24 @@
     text-decoration: none;
   }
   
+  .address .address-street {
+    display: inline-block;
+    margin-bottom: 9px;
+  }
+  
+  .address .link {
+    margin-bottom: 9px;
+  }
   
 
-  
-  
     
   /* Навигация */
 
-  .main-nav {
+  .header .main-nav {
     display: flex;
-    margin-left: 50px;
+    margin-left: 93px;
   }
-  
+
   .header .list {
     display: flex;
   }
@@ -208,6 +222,12 @@
   
   .contact-nav .link {
     display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  
+  .link-page {
+    
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -261,7 +281,7 @@
   /* Герой */
   
   .hero {
-    background-color: #2f303a;
+    background-color: var(--background-color);
     padding-top: 200px;
     padding-bottom: 200px;
 
@@ -330,7 +350,7 @@
   /* Section */
   
   .section .section-title-services {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -341,10 +361,13 @@
   color: var(--title-text-color);
 }
   
+.holder {
+  padding-bottom: 0;
+}
 
 
   .section .section-title-profit {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -352,8 +375,7 @@
     color: var(--title-text-color);
   }
   
-
-
+  
   .section-title-profit,
   .service-title {
   font-weight: 700;
@@ -407,12 +429,7 @@
   margin-right: 0px;
 }
 
-.list-products .card {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
-}
+
 .filter-products .service-title {
   margin-bottom: 4px;
 }
@@ -421,6 +438,13 @@
   margin-bottom: 0px;
 }
 
+.list-products .card {
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+
+  padding: 20px 24px;
+}
 
 .section-title-services {
   margin-top: 0px;
@@ -431,6 +455,7 @@
   line-height: 1.17;
   text-align: center;
 }
+
 
   
   /* Team */
@@ -544,7 +569,7 @@
   margin-bottom: 0px;
 }
 
-/*--списки*/
+/*--Списки*/
 
 .list-item-title,
 .service-title {
@@ -592,7 +617,7 @@
 
   
   .section .service-title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -604,14 +629,64 @@
     letter-spacing: 0.03em;
   }
     
-  .footer-container {
-    display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
+
+/*--Футер*/
+
+  .footer {
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    background-color: var(--background-color);
+    
   }
 
+  .footer .link {
+    display: inline-block;
+    letter-spacing: 0.03em;
+    color: #acacb0;
+  }
   
+  .footer .link:hover,
+  .footer .link:focus {
+    color: var(--accent-text-color);
+  }
 
+  .logo-footer:hover,
+  .logo-footer:focus {
+    color: var(--accent-text-color);
+  }
+  
+  .footer .logo-title {
+    margin-bottom: 20px;
+  
+    --text-title-color: var(--white-color);
+  }
+  
+  
+  .address .address-street {
+    display: inline-block;
+    margin-bottom: 9px;
+  }
+  .address .link:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  
+  .footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+  }
+  
+  .footer-address {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+    width: 231px;
+  }
+  
+ 
   .visually-hidden {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px);
