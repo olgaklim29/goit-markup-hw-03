@@ -71,6 +71,10 @@
     margin-right: auto;
 
 }
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
      
 
 .header .container {
@@ -430,6 +434,7 @@
 }
 
 
+
 .filter-products .service-title {
   margin-bottom: 4px;
 }
@@ -632,8 +637,12 @@
 
 /*--Футер*/
 
+
+
   .footer {
-    
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -674,8 +683,7 @@
   }
   
   .footer-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    
     display: flex;
   }
   
